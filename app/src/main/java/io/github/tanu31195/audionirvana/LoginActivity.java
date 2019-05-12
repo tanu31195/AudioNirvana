@@ -28,15 +28,16 @@ public class LoginActivity extends AppCompatActivity {
         final EditText etUsername = (EditText) findViewById(R.id.etUsername);
         final EditText etPassword = (EditText) findViewById(R.id.etPassword);
         final Button btnLogin = (Button) findViewById(R.id.btnLogin);
+        final Button btnSignUp = (Button) findViewById(R.id.btnSignUp);
 
-        final TextView tvHello = (TextView) findViewById(R.id.tvHello);
+        final TextView tvAppName = (TextView) findViewById(R.id.tvAppName);
 
-        tvHello.setOnClickListener(new View.OnClickListener(){
+        tvAppName.setOnClickListener(new View.OnClickListener(){
 
             @Override
             public void onClick(View v) {
-                Intent userAreaIntent = new Intent(LoginActivity.this, MainActivity.class);
-                LoginActivity.this.startActivity(userAreaIntent);
+                Intent mainIntent = new Intent(LoginActivity.this, MainActivity.class);
+                LoginActivity.this.startActivity(mainIntent);
             }
         });
 
@@ -86,6 +87,15 @@ public class LoginActivity extends AppCompatActivity {
                 LoginRequest loginRequest = new LoginRequest(username, password, responseListener);
                 RequestQueue queue = Volley.newRequestQueue(LoginActivity.this);
                 queue.add(loginRequest);
+            }
+        });
+
+        btnSignUp.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                Intent mainIntent = new Intent(LoginActivity.this,MainActivity.class);
+                startActivity(mainIntent);
             }
         });
 

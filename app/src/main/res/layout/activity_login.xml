@@ -12,8 +12,8 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Please login to access your user area"
-        android:id="@+id/tvHello"
+        android:text="@string/app_name"
+        android:id="@+id/tvAppName"
         android:typeface="normal"
         android:textSize="20sp" />
 
@@ -52,14 +52,24 @@
         android:id="@+id/imageView"
         android:layout_above="@+id/etUsername"
         android:layout_centerHorizontal="true"
-        android:layout_below="@+id/tvHello" />
+        android:layout_below="@+id/tvAppName" />
 
     <Button
-        android:text="Login"
-        android:layout_height="wrap_content"
         android:id="@+id/btnLogin"
-        android:layout_marginBottom="64dp"
         android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="66dp"
+        android:layout_marginStart="101dp"
+        android:text="@string/btn_login" />
+
+    <Button
+        android:id="@+id/btnSignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/btnLogin"
+        android:layout_marginEnd="101dp"
+        android:text="@string/btn_signUp" />
 </RelativeLayout>

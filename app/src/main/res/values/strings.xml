@@ -1,7 +1,102 @@
 <resources>
     <string name="app_name">Audio Nirvana</string>
     <string name="title_activity_earphone_questions">EarphoneQuestionsActivity</string>
+
     <string name="btn_analyze">Analyze</string>
+    <string name="btn_login">Login</string>
+    <string name="btn_signUp">Sign Up</string>
+
+    <!--Earphone Questions-->
+    <string name="ep_q1">1. So.. Headphones or earbuds?</string>
+    <string name="ep_q2">2. How do you take your audio?</string>
+    <string name="ep_q3">3. Are you a professional working in an audio related field? (Editor/ Composer)?</string>
+    <string name="ep_q4">4. Hate having to listen to your music and external noise remixed?</string>
+    <string name="ep_q5">5. Do you travel a lot?</string>
+    <string name="ep_q6">6. Wide spread sound or Tight beats?</string>
+    <string name="ep_q7">7.Do you hate cables?</string>
+    <string name="ep_q8">8.How long are your listening sessions?</string>
+    <string name="ep_q9">9.With what would you use these?</string>
+    <string name="ep_q10">10. How careful are you in using devices?</string>
+    <string name="ep_q11">11.How much are you willing to pay?</string>
+
+    <!--Earphone Answers-->
+    <string name="ep_q1_a1">Earbuds</string>
+    <string name="ep_q1_a2">Headphones</string>
+    <string name="ep_q1_a3">Any</string>
+
+    <string name="ep_q2_a1">Natural &amp; clear</string>
+    <string name="ep_q2_a2">Punchy &amp; bassy</string>
+    <string name="ep_q2_a3">Anything really</string>
+
+    <string name="ep_q3_a1">Yes</string>
+    <string name="ep_q3_a2">No</string>
+    <string name="ep_q3_a3">Kind of</string>
+
+    <string name="ep_q4_a1">Yessss!</string>
+    <string name="ep_q4_a2">Somewhat</string>
+    <string name="ep_q4_a3">No</string>
+
+    <string name="ep_q5_a1">Yes</string>
+    <string name="ep_q5_a2">No</string>
+    <string name="ep_q5_a3">Sometimes</string>
+
+    <string name="ep_q6_a1">Wide</string>
+    <string name="ep_q6_a2">Tight</string>
+    <string name="ep_q6_a3">Don’t care</string>
+
+    <string name="ep_q7_a1">Hate them</string>
+    <string name="ep_q7_a2">Need them</string>
+    <string name="ep_q7_a3">No issue either way</string>
+
+    <string name="ep_q8_a1">Short</string>
+    <string name="ep_q8_a2">Somewhere between</string>
+    <string name="ep_q8_a3">Long</string>
+
+    <string name="ep_q9_a1">Mobile phone</string>
+    <string name="ep_q9_a2">Dedicated audio player</string>
+    <string name="ep_q9_a3">Amplifier/PC</string>
+
+    <string name="ep_q10_a1">Very</string>
+    <string name="ep_q10_a2">Somewhat</string>
+    <string name="ep_q10_a3">Not at all</string>
+
+    <string name="ep_q11_a1">Not much</string>
+    <string name="ep_q11_a2">Somewhat</string>
+    <string name="ep_q11_a3">A lot</string>
+
+    <!--Bluetooth Speaker Questions-->
+    <string name="bts_q1">1. Why do you need this?</string>
+    <string name="bts_q2">2. How long are your listening sessions?</string>
+    <string name="bts_q3">3. Plan on using this around liquids… or the pool?</string>
+    <string name="bts_q4">4. How careful are you in using devices?</string>
+    <string name="bts_q5">5. Are you that person who walks around while listening to something?</string>
+    <string name="bts_q6">6. How much are you willing to pay?</string>
+
+    <!--Bluetooth Speaker Answers-->
+    <string name="bts_q1_a1">Earbuds</string>
+    <string name="bts_q1_a2">Headphones</string>
+    <string name="bts_q1_a3">Any</string>
+
+    <string name="bts_q2_a1">Natural &amp; clear</string>
+    <string name="bts_q2_a2">Punchy &amp; bassy</string>
+    <string name="bts_q2_a3">Anything really</string>
+
+    <string name="bts_q3_a1">Yes</string>
+    <string name="bts_q3_a2">No</string>
+    <string name="bts_q3_a3">Kind of</string>
+
+    <string name="bts_q4_a1">Yessss!</string>
+    <string name="bts_q4_a2">Somewhat</string>
+    <string name="bts_q4_a3">No</string>
+
+    <string name="bts_q5_a1">Yes</string>
+    <string name="bts_q5_a2">No</string>
+    <string name="bts_q5_a3">Sometimes</string>
+
+    <string name="bts_q6_a1">Wide</string>
+    <string name="bts_q6_a2">Tight</string>
+    <string name="bts_q6_a3">Don’t care</string>
+
     <string name="large_text">
         "Material is the metaphor.\n\n"
 
