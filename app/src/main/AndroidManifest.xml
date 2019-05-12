@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="io.github.tanu31195.audionirvana">
+
     <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -20,7 +22,13 @@
             android:name=".EarphoneQuestionsActivity"
             android:label="@string/title_activity_earphone_questions"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".MainActivity" />
+        <activity
+            android:name=".BluetoothSpeakerQuestionsActivity"
+            android:label="@string/title_activity_bluetooth_speaker"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".ProfileActivity" />
+        <activity android:name=".AboutUs"></activity>
     </application>
 
 </manifest>

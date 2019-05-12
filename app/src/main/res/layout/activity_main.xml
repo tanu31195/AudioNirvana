@@ -84,4 +84,40 @@
         app:layout_constraintTop_toBottomOf="@+id/question1"
         tools:layout_editor_absoluteX="161dp" />
 
+    <Button
+        android:id="@+id/btnProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="148dp"
+        android:layout_marginTop="225dp"
+        android:text="@string/btn_profile" />
+
+    <Button
+        android:id="@+id/btnEarphones"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/btnProfile"
+        android:layout_alignTop="@+id/btnAnalyze"
+        android:text="@string/btn_earphones" />
+
+    <Button
+        android:id="@+id/btnBTSpeakers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/btnProfile"
+        android:layout_marginBottom="153dp"
+        android:text="@string/btn_btSpeakers" />
+
+    <Button
+        android:id="@+id/btnAboutUs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/btnProfile"
+        android:layout_marginBottom="62dp"
+        android:text="@string/btn_aboutUs" />
+
 </RelativeLayout>
