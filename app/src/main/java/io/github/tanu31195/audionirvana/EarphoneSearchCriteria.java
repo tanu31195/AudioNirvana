@@ -1,18 +1,17 @@
 package io.github.tanu31195.audionirvana;
 
 public class EarphoneSearchCriteria {
-    String type;
-    String sound;
-    String frequencyRange;
-    String noiseCancelling;
-    String portable;
-    String back;
-    String wireless;
-    String comfort;
-    String impedance;
-    boolean waterproof;
-    String durability;
-    String cost;
+    private String type;
+    private String sound;
+    private String frequencyRange;
+    private String noiseCancelling;
+    private String portable;
+    private String back;
+    private String wireless;
+    private String comfort;
+    private String impedance;
+    private String durability;
+    private String cost;
 
     public String getType() {
         return type;
@@ -84,14 +83,6 @@ public class EarphoneSearchCriteria {
 
     public void setImpedance(String impedance) {
         this.impedance = impedance;
-    }
-
-    public boolean isWaterproof() {
-        return waterproof;
-    }
-
-    public void setWaterproof(boolean waterproof) {
-        this.waterproof = waterproof;
     }
 
     public String getDurability() {

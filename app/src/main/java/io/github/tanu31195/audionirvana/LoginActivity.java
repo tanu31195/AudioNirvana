@@ -57,11 +57,11 @@ public class LoginActivity extends AppCompatActivity {
 
                             if (success){
                                 Log.i("Info", "Success");
-                                String student_id = jsonResponse.getString("student_id");
+//                                String student_id = jsonResponse.getString("student_id");
                                 String fullname = jsonResponse.getString("fullname");
 
                                 Intent intent = new Intent(LoginActivity.this, MainActivity.class);
-                                intent.putExtra("student_id", student_id);
+//                                intent.putExtra("student_id", student_id);
                                 intent.putExtra("fullname", fullname);
                                 intent.putExtra("username", username);
 

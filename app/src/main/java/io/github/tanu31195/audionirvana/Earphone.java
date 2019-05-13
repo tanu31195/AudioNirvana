@@ -1,20 +1,20 @@
 package io.github.tanu31195.audionirvana;
 
 public class Earphone {
-    String model;
-    String type;
-    String back;
-    boolean wireless;
-    boolean portable;
-    String comfort;
-    String sound;
-    String noiseCancelling;
-    String frequencyRange;
-    String impedance;
-    String durability;
-    boolean waterProof;
-    String cost;
-    String url;
+    private String model;
+    private String type;
+    private String back;
+    private boolean wireless;
+    private boolean portable;
+    private String comfort;
+    private String sound;
+    private String noiseCancelling;
+    private String frequencyRange;
+    private String impedance;
+    private String durability;
+    private boolean waterProof;
+    private String cost;
+    private String url;
 
     public String getModel() {
         return model;

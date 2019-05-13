@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,121 +7,508 @@
     android:fitsSystemWindows="true"
     tools:context=".EarphoneQuestionsActivity">
 
-    <android.support.design.widget.AppBarLayout
-        android:id="@+id/app_bar"
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/app_bar_height"
-        android:fitsSystemWindows="true"
-        android:theme="@style/AppTheme.AppBarOverlay">
+    <!--<android.support.design.widget.AppBarLayout-->
+        <!--android:id="@+id/app_bar"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="@dimen/app_bar_height"-->
+        <!--android:fitsSystemWindows="true"-->
+        <!--android:theme="@style/AppTheme.AppBarOverlay">-->
 
-        <android.support.design.widget.CollapsingToolbarLayout
-            android:id="@+id/toolbar_layout"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:fitsSystemWindows="true"
-            app:contentScrim="?attr/colorPrimary"
-            app:layout_scrollFlags="scroll|exitUntilCollapsed"
-            app:toolbarId="@+id/toolbar">
+        <!--<android.support.design.widget.CollapsingToolbarLayout-->
+            <!--android:id="@+id/toolbar_layout"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:fitsSystemWindows="true"-->
+            <!--app:contentScrim="?attr/colorPrimary"-->
+            <!--app:layout_scrollFlags="scroll|exitUntilCollapsed"-->
+            <!--app:toolbarId="@+id/toolbar">-->
 
-            <android.support.v7.widget.Toolbar
-                android:id="@+id/toolbar"
-                android:layout_width="match_parent"
-                android:layout_height="?attr/actionBarSize"
-                app:layout_collapseMode="pin"
-                app:popupTheme="@style/AppTheme.PopupOverlay" />
+            <!--<android.support.v7.widget.Toolbar-->
+                <!--android:id="@+id/toolbar"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="?attr/actionBarSize"-->
+                <!--app:layout_collapseMode="pin"-->
+                <!--app:popupTheme="@style/AppTheme.PopupOverlay" />-->
 
-        </android.support.design.widget.CollapsingToolbarLayout>
-    </android.support.design.widget.AppBarLayout>
+        <!--</android.support.design.widget.CollapsingToolbarLayout>-->
+    <!--</android.support.design.widget.AppBarLayout>-->
 
     <!--<include layout="@layout/content_earphone_questions" />-->
 
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/fab"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="@dimen/fab_margin"
-        app:layout_anchor="@id/app_bar"
-        app:layout_anchorGravity="bottom|end"
-        app:srcCompat="@android:drawable/ic_dialog_email" />
+    <!--<android.support.design.widget.FloatingActionButton-->
+        <!--android:id="@+id/fab"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_margin="@dimen/fab_margin"-->
+        <!--app:layout_anchor="@id/app_bar"-->
+        <!--app:layout_anchorGravity="bottom|end"-->
+        <!--app:srcCompat="@android:drawable/ic_dialog_email" />-->
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="@string/ep_q1"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="167dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1515dp"
+        android:orientation="vertical">
 
-    <RadioGroup
-        android:id="@+id/question1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="100dp"
-        app:layout_anchor="@+id/question1"
-        app:layout_anchorGravity="right|top"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        tools:layout_editor_absoluteX="150dp">
-
-        <RadioButton
-            android:id="@+id/radio0"
+        <TextView
+            android:id="@+id/tv_ep_q1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:checked="true"
-            android:text="@string/ep_q1_a1" />
+            android:layout_marginTop="50dp"
+            android:text="@string/ep_q1"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="167dp" />
 
-        <RadioButton
-            android:id="@+id/radio1"
+        <RadioGroup
+            android:id="@+id/rg_ep_q1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/ep_q1_a2" />
+            android:layout_marginTop="8dp"
+            app:layout_anchor="@+id/rg_ep_q1"
+            app:layout_anchorGravity="right|top"
+            app:layout_constraintTop_toBottomOf="@+id/tv_ep_q1"
+            tools:layout_editor_absoluteX="150dp">
 
-        <RadioButton
-            android:id="@+id/radio2"
+            <RadioButton
+                android:id="@+id/rg_ep_q1_a1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:tag="@string/ep_q1_t1"
+                android:text="@string/ep_q1_a1" />
+
+            <RadioButton
+                android:id="@+id/rg_ep_q1_a2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tag="@string/ep_q1_t2"
+                android:text="@string/ep_q1_a2" />
+
+            <RadioButton
+                android:id="@+id/rg_ep_q1_a3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tag="@string/ep_q1_t3"
+                android:text="@string/ep_q1_a3" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/tv_ep_q2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/ep_q1_a3" />
-    </RadioGroup>
+            android:layout_marginTop="8dp"
+            android:text="@string/ep_q2"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="167dp" />
 
-    <RadioGroup
-        android:id="@+id/question2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        app:layout_anchor="@+id/question2"
-        app:layout_anchorGravity="right|center"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="165dp">
-
-        <RadioButton
-            android:id="@+id/radio3"
+        <RadioGroup
+            android:id="@+id/rg_ep_q2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:checked="true"
-            android:text="RadioButton" />
+            app:layout_anchor="@+id/rg_ep_q2"
+            app:layout_anchorGravity="right|center"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="165dp">
 
-        <RadioButton
-            android:id="@+id/radio4"
+            <RadioButton
+                android:id="@+id/rg_ep_q2_a1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:tag="@string/ep_q2_t1"
+                android:text="@string/ep_q2_a1" />
+
+            <RadioButton
+                android:id="@+id/rg_ep_q2_a2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tag="@string/ep_q2_t2"
+                android:text="@string/ep_q2_a2" />
+
+            <RadioButton
+                android:id="@+id/rg_ep_q2_a3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tag="@string/ep_q2_t3"
+                android:text="@string/ep_q2_a3" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/tv_ep_q3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="RadioButton" />
+            android:layout_marginTop="8dp"
+            android:text="@string/ep_q3"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="167dp" />
 
-        <RadioButton
-            android:id="@+id/radio5"
+        <RadioGroup
+            android:id="@+id/rg_ep_q3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="RadioButton" />
-    </RadioGroup>
+            app:layout_anchor="@+id/rg_ep_q3"
+            app:layout_anchorGravity="right|center"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="165dp">
 
-    <Button
-        android:id="@+id/btnAnalyze"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="316dp"
-        android:text="@string/btn_analyze"
-        tools:layout_editor_absoluteX="161dp" />
+            <RadioButton
+                android:id="@+id/rg_ep_q3_a1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:tag="@string/ep_q3_t1"
+                android:text="@string/ep_q3_a1" />
 
-</android.support.design.widget.CoordinatorLayout>
+            <RadioButton
+                android:id="@+id/rg_ep_q3_a2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tag="@string/ep_q3_t2"
+                android:text="@string/ep_q3_a2" />
+
+            <RadioButton
+                android:id="@+id/rg_ep_q3_a3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tag="@string/ep_q3_t3"
+                android:text="@string/ep_q3_a3" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/tv_ep_q4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/ep_q4"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="167dp" />
+
+        <RadioGroup
+            android:id="@+id/rg_ep_q4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_anchor="@+id/rg_ep_q4"
+            app:layout_anchorGravity="right|center"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="165dp">
+
+            <RadioButton
+                android:id="@+id/rg_ep_q4_a1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:tag="@string/ep_q4_t1"
+                android:text="@string/ep_q4_a1" />
+
+            <RadioButton
+                android:id="@+id/rg_ep_q4_a2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tag="@string/ep_q4_t2"
+                android:text="@string/ep_q4_a2" />
+
+            <RadioButton
+                android:id="@+id/rg_ep_q4_a3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tag="@string/ep_q4_t3"
+                android:text="@string/ep_q4_a3" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/tv_ep_q5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/ep_q5"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="167dp" />
+
+        <RadioGroup
+            android:id="@+id/rg_ep_q5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_anchor="@+id/rg_ep_q5"
+            app:layout_anchorGravity="right|center"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="165dp">
+
+            <RadioButton
+                android:id="@+id/rg_ep_q5_a1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:tag="@string/ep_q5_t1"
+                android:text="@string/ep_q5_a1" />
+
+            <RadioButton
+                android:id="@+id/rg_ep_q5_a2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tag="@string/ep_q5_t2"
+                android:text="@string/ep_q5_a2" />
+
+            <RadioButton
+                android:id="@+id/rg_ep_q5_a3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tag="@string/ep_q5_t3"
+                android:text="@string/ep_q5_a3" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/tv_ep_q6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/ep_q6"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="167dp" />
+
+        <RadioGroup
+            android:id="@+id/rg_ep_q6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_anchor="@+id/rg_ep_q6"
+            app:layout_anchorGravity="right|center"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="165dp">
+
+            <RadioButton
+                android:id="@+id/rg_ep_q6_a1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:tag="@string/ep_q6_t1"
+                android:text="@string/ep_q6_a1" />
+
+            <RadioButton
+                android:id="@+id/rg_ep_q6_a2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tag="@string/ep_q6_t2"
+                android:text="@string/ep_q6_a2" />
+
+            <RadioButton
+                android:id="@+id/rg_ep_q6_a3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tag="@string/ep_q6_t3"
+                android:text="@string/ep_q6_a3" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/tv_ep_q7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/ep_q7"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="167dp" />
+
+        <RadioGroup
+            android:id="@+id/rg_ep_q7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_anchor="@+id/rg_ep_q7"
+            app:layout_anchorGravity="right|center"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="165dp">
+
+            <RadioButton
+                android:id="@+id/rg_ep_q7_a1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:tag="@string/ep_q7_t1"
+                android:text="@string/ep_q7_a1" />
+
+            <RadioButton
+                android:id="@+id/rg_ep_q7_a2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tag="@string/ep_q7_t2"
+                android:text="@string/ep_q7_a2" />
+
+            <RadioButton
+                android:id="@+id/rg_ep_q7_a3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tag="@string/ep_q7_t3"
+                android:text="@string/ep_q7_a3" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/tv_ep_q8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/ep_q8"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="167dp" />
+
+        <RadioGroup
+            android:id="@+id/rg_ep_q8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_anchor="@+id/rg_ep_q8"
+            app:layout_anchorGravity="right|center"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="165dp">
+
+            <RadioButton
+                android:id="@+id/rg_ep_q8_a1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:tag="@string/ep_q8_t1"
+                android:text="@string/ep_q8_a1" />
+
+            <RadioButton
+                android:id="@+id/rg_ep_q8_a2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tag="@string/ep_q8_t2"
+                android:text="@string/ep_q8_a2" />
+
+            <RadioButton
+                android:id="@+id/rg_ep_q8_a3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tag="@string/ep_q8_t3"
+                android:text="@string/ep_q8_a3" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/tv_ep_q9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/ep_q9"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="167dp" />
+
+        <RadioGroup
+            android:id="@+id/rg_ep_q9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_anchor="@+id/rg_ep_q9"
+            app:layout_anchorGravity="right|center"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="165dp">
+
+            <RadioButton
+                android:id="@+id/rg_ep_q9_a1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:tag="@string/ep_q9_t1"
+                android:text="@string/ep_q9_a1" />
+
+            <RadioButton
+                android:id="@+id/rg_ep_q9_a2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tag="@string/ep_q9_t2"
+                android:text="@string/ep_q9_a2" />
+
+            <RadioButton
+                android:id="@+id/rg_ep_q9_a3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tag="@string/ep_q9_t3"
+                android:text="@string/ep_q9_a3" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/tv_ep_q10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/ep_q10"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="167dp" />
+
+        <RadioGroup
+            android:id="@+id/rg_ep_q10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_anchor="@+id/rg_ep_q10"
+            app:layout_anchorGravity="right|center"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="165dp">
+
+            <RadioButton
+                android:id="@+id/rg_ep_q10_a1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:tag="@string/ep_q10_t1"
+                android:text="@string/ep_q10_a1" />
+
+            <RadioButton
+                android:id="@+id/rg_ep_q10_a2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tag="@string/ep_q10_t2"
+                android:text="@string/ep_q10_a2" />
+
+            <RadioButton
+                android:id="@+id/rg_ep_q10_a3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tag="@string/ep_q10_t3"
+                android:text="@string/ep_q10_a3" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/tv_ep_q11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/ep_q11"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="167dp" />
+
+        <RadioGroup
+            android:id="@+id/rg_ep_q11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_anchor="@+id/rg_ep_q11"
+            app:layout_anchorGravity="right|center"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="165dp">
+
+            <RadioButton
+                android:id="@+id/rg_ep_q11_a1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:tag="@string/ep_q11_t1"
+                android:text="@string/ep_q11_a1" />
+
+            <RadioButton
+                android:id="@+id/rg_ep_q11_a2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tag="@string/ep_q1_t2"
+                android:text="@string/ep_q11_a2" />
+
+            <RadioButton
+                android:id="@+id/rg_ep_q11_a3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tag="@string/ep_q11_t3"
+                android:text="@string/ep_q11_a3" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btnAnalyze"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/btn_analyze"
+            tools:layout_editor_absoluteX="161dp" />
+
+    </LinearLayout>
+
+</ScrollView >

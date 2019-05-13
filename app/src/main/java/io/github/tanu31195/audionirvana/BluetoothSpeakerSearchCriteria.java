@@ -1,9 +1,9 @@
 package io.github.tanu31195.audionirvana;
 
 public class BluetoothSpeakerSearchCriteria {
-    String size;
-    int batterLife;
-    boolean waterproof;
-    String range;
-    String cost;
+    private String size;
+    private int batterLife;
+    private boolean waterproof;
+    private String range;
+    private String cost;
 }

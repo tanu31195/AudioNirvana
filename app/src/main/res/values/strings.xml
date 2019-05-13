@@ -11,20 +11,20 @@
     <string name="btn_aboutUs">About Us</string>
 
     <!--Earphone Questions-->
-    <string name="ep_q1">1. So.. Headphones or earbuds?</string>
+    <string name="ep_q1">1. So.. Earphones or Headphones?</string>
     <string name="ep_q2">2. How do you take your audio?</string>
     <string name="ep_q3">3. Are you a professional working in an audio related field? (Editor/ Composer)?</string>
     <string name="ep_q4">4. Hate having to listen to your music and external noise remixed?</string>
     <string name="ep_q5">5. Do you travel a lot?</string>
     <string name="ep_q6">6. Wide spread sound or Tight beats?</string>
-    <string name="ep_q7">7.Do you hate cables?</string>
-    <string name="ep_q8">8.How long are your listening sessions?</string>
-    <string name="ep_q9">9.With what would you use these?</string>
+    <string name="ep_q7">7. Do you hate cables?</string>
+    <string name="ep_q8">8. How long are your listening sessions?</string>
+    <string name="ep_q9">9. With what would you use these?</string>
     <string name="ep_q10">10. How careful are you in using devices?</string>
-    <string name="ep_q11">11.How much are you willing to pay?</string>
+    <string name="ep_q11">11. How much are you willing to pay?</string>
 
     <!--Earphone Answers-->
-    <string name="ep_q1_a1">Earbuds</string>
+    <string name="ep_q1_a1">Earphones</string>
     <string name="ep_q1_a2">Headphones</string>
     <string name="ep_q1_a3">Any</string>
 
@@ -67,6 +67,51 @@
     <string name="ep_q11_a1">Not much</string>
     <string name="ep_q11_a2">Somewhat</string>
     <string name="ep_q11_a3">A lot</string>
+
+    <!--Earphone Answer Tags-->
+    <string name="ep_q1_t1">earphone</string>
+    <string name="ep_q1_t2">headphone</string>
+    <string name="ep_q1_t3">ANY</string>
+
+    <string name="ep_q2_t1">natural</string>
+    <string name="ep_q2_t2">punchy</string>
+    <string name="ep_q2_t3">ANY</string>
+
+    <string name="ep_q3_t1">high</string>
+    <string name="ep_q3_t2">!high</string>
+    <string name="ep_q3_t3">medium</string>
+
+    <string name="ep_q4_t1">active</string>
+    <string name="ep_q4_t2">passive</string>
+    <string name="ep_q4_t3">ANY</string>
+
+    <string name="ep_q5_t1">yes</string>
+    <string name="ep_q5_t2">ANY</string>
+    <string name="ep_q5_t3">ANY</string>
+
+    <string name="ep_q6_t1">open</string>
+    <string name="ep_q6_t2">closed</string>
+    <string name="ep_q6_t3">ANY</string>
+
+    <string name="ep_q7_t1">yes</string>
+    <string name="ep_q7_t2">no</string>
+    <string name="ep_q7_t3">ANY</string>
+
+    <string name="ep_q8_t1">ANY</string>
+    <string name="ep_q8_t2">!low</string>
+    <string name="ep_q8_t3">high</string>
+
+    <string name="ep_q9_t1">32</string>
+    <string name="ep_q9_t2">50</string>
+    <string name="ep_q9_t3">ANY</string>
+
+    <string name="ep_q10_t1">ANY</string>
+    <string name="ep_q10_t2">!low</string>
+    <string name="ep_q10_t3">high</string>
+
+    <string name="ep_q11_t1">low</string>
+    <string name="ep_q11_t2">!high</string>
+    <string name="ep_q11_t3">ANY</string>
 
     <!--Bluetooth Speaker Questions-->
     <string name="bts_q1">1. Why do you need this?</string>

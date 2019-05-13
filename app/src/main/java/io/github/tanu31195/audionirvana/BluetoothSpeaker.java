@@ -1,15 +1,15 @@
 package io.github.tanu31195.audionirvana;
 
 public class BluetoothSpeaker {
-    String model;
-    String size;
-    String batteryLife;
-    boolean multipleConnectivity;
-    String range;
-    String durability;
-    boolean waterproof;
-    String cost;
-    String url;
+    private String model;
+    private String size;
+    private String batteryLife;
+    private boolean multipleConnectivity;
+    private String range;
+    private String durability;
+    private boolean waterproof;
+    private String cost;
+    private String url;
 
     public String getModel() {
         return model;
